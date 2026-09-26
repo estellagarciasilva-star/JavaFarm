@@ -18,7 +18,7 @@ import javafx.scene.layout.GridPane;
 
 public class Controller implements Initializable {
 
-    // private Fazenda fazenda = new Fazenda();
+    private Fazenda fazenda = new Fazenda();
     private List<ImageView> imageTerrenos = new ArrayList<>();
     private int sleepTime = 3000;
 
@@ -41,7 +41,7 @@ public class Controller implements Initializable {
         botaoBatata.setText("Batata x " + fazenda.getCeleiro().getQtdeBatatas());
         botaoCenoura.setText("Cenoura x " + fazenda.getCeleiro().getQtdeCenouras());
         botaoMorango.setText("Morango x " + fazenda.getCeleiro().getQtdeMorangos());
-        ocupacaoDoCeleiro.setProgress(fazenda.getCeleiro().getOcupacao());
+        ocupacaoDoCeleiro.setProgress(fazenda.getCeleiro().getOcupacao() / 100.0);
 
         for (int x = 0; x < 13; x++) {
         for (int y = 0; y < 13; y++) {

@@ -5,7 +5,7 @@ public class Batata {
     private int tempoDeVida;
     private int tempoDeCrescimento;
 
-    public Batata (int tamanho){
+    public Batata (){
         this.tamanho = 1;
         this.tempoDeVida = 1;
         this.tempoDeCrescimento = 3;
@@ -20,7 +20,6 @@ public class Batata {
 
         public boolean podeColher(){ //retorna verdadeiro se o alcançou o tamanho máximo
             return this.tamanho >= 4;
-
         }
 
         public String getImagem(){ // imagem da batata em crescimento

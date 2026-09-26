@@ -10,7 +10,7 @@ public class Fazenda {
 
     public Fazenda() {
         this.terrenos = new ArrayList<>();
-        this.celeiro = new Celeiro();
+        this.celeiro = new Celeiro(20);
 
         for (int x = 0; x < 13; x++) {
             for (int y = 0; y < 13; y++) {
